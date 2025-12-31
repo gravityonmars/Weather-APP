@@ -1,4 +1,4 @@
-const apiKey = "994a328b9d4143ae899230826251212";
+const apiKey = "API_KEY";
 function getWeather() {
   const city = document.getElementById("cityInput").value;
 
@@ -7,7 +7,7 @@ function getWeather() {
     return;
   }
 
-const url = `https://corsproxy.io/?https://api.weatherapi.com/v1/current.json?key=KEY&q=${city}`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
   fetch(url)
     .then(response => response.json())
