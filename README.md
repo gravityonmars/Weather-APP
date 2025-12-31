@@ -74,5 +74,4 @@ Simply open `index.html` in your web browser.
 * Improve UI design
 * Add dark mode
 
-Just tell me.
 ```
