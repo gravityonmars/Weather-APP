@@ -7,7 +7,7 @@ function getWeather() {
     return;
   }
 
-  const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+const url = `https://corsproxy.io/?https://api.weatherapi.com/v1/current.json?key=KEY&q=${city}`;
 
   fetch(url)
     .then(response => response.json())
@@ -32,4 +32,5 @@ function getWeather() {
         "Error fetching data";
     });
 }
+
 
